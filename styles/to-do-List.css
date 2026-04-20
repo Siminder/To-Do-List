@@ -1,0 +1,15 @@
+:root{
+    --primary-bg: url("../images/background.jpg");
+}
+
+body{
+    background-image: var(--primary-bg)
+}
+
+.dateBox{ 
+    width: 150px;
+    height: 150px;
+    border-radius: 5px; 
+    background-color: #A76E5C;
+    box-shadow: 0 0 0 5px #462900;
+}
