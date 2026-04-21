@@ -36,7 +36,7 @@ body{
     background-color: #5a3e36;
     border-radius: 5px;
     height: 20px;
-    width: 50%;
+    width: 0%;
 }
 
 .progressBar{
@@ -69,6 +69,19 @@ body{
 }
 
 ul{
-    list-style-image: var(--li-img);
+    list-style-image: var(--li-img);    
+   
+    
+}
+
+li{
+    font-size: 25px;
+    margin-top: 15px;
+   
+    
+}
+
+.strikeThrew{
+     text-decoration: line-through black 5px;
 }
 
