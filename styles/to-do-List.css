@@ -20,6 +20,7 @@ body{
     color: var(--primary-font-color);
 }
 
+
 .bar{
     margin: 20px;
     width: 400px;
@@ -32,12 +33,6 @@ body{
     align-items: center;
 }
 
-.test{
-    background-color: #5a3e36;
-    border-radius: 5px;
-    height: 20px;
-    width: 0%;
-}
 
 .progressBar{
     width: 380px;
@@ -46,7 +41,20 @@ body{
     margin-bottom: 10px;
     border: 1px solid black;
     
+    
 }
+
+.progress{
+    height: 20px;
+    width: 0%;
+    background:  #462900;
+;
+    transition: width 0.3 ease;
+
+}
+
+
+
 
 .inputBox{
     width: 300px;
