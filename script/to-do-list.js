@@ -8,6 +8,7 @@ const progressBar = document.querySelector(".progress");
 
 
 
+
 // get value from input 
 // if click enter with input it will submit the value
 input.addEventListener('keypress', function (e) {
@@ -66,3 +67,43 @@ function resetProgress() {
 // add it to a li element 
 // if li is clicked cross it out
 // if crossed out progress bar incresses
+
+
+
+// displaying the current date function 
+function currentDate() {
+    const date = document.getElementById('dateBox');
+
+    const months = [
+        "January", "February", "March", "April", "May", "June",
+        "July", "August", "September", "October", "November", "December"
+    ];
+
+    const days = [
+        "Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"
+    ];
+
+    let d = new Date();
+    let month  = d.getMonth(); 
+    let day = d.getDay();
+    
+    // loop threw the months array and then compare the number value wiht the current month number 
+    // if they match display the current month of that number
+   
+    let newH3 = document.createElement('h3');
+    let newP = document.createElement('p');
+    let newH4 = document.createElement('h4');
+    newH4.textContent = d.getDate();
+    newH3.textContent = days[day];
+    newP.textContent = months[month];
+    date.appendChild(newH3);
+    date.appendChild(newH4)
+    date.appendChild(newP);
+    
+     
+
+}
+
+
+currentDate();

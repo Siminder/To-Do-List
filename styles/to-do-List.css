@@ -11,6 +11,14 @@ body{
     background-image: var(--primary-bg)
 }
 
+.mainBox{
+    border: black 1px solid;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    
+}
+
 .dateBox{ 
     width: 150px;
     height: 150px;
