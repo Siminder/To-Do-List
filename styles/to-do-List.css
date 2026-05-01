@@ -3,29 +3,51 @@
     --primary-font-color: #f5f5f5;
     --primary-bg-color: #A76E5C;
     --shadow-color: #462900;
-    --li-img: url("../images/li.png")
+    --li-img: url("../images/li.png");
+    --Pacifico: 'Pacifico';
+
 
 }
 
 body{
-    background-image: var(--primary-bg)
+    background-image: var(--primary-bg);
+    margin-left: 250px;
+    font-family: var(--Pacifico);
 }
 
+
 .mainBox{
-    border: black 1px solid;
+    
     width: 900px;
     display: flex;
     flex-direction: row;
     
 }
 
+
+.rightSide{
+    margin-left: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+
 .dateBox{ 
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 5px; 
     background-color: var(--primary-bg-color);
     box-shadow: 0 0 0 2px var(--shadow-color);
     color: var(--primary-font-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 
@@ -34,7 +56,7 @@ body{
     width: 400px;
     border-radius: 5px;
     background-color: var(--primary-bg-color);
-    box-shadow: 0 0 0 5px var(--shadow-color);
+    box-shadow: 0 0 0 3px var(--shadow-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +69,7 @@ body{
     height: 20px;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 1px solid black;
+   border: 1px solid black;
     
     
 }
@@ -56,7 +78,6 @@ body{
     height: 20px;
     width: 0%;
     background:  #462900;
-;
     transition: width 0.3 ease;
 
 }
@@ -77,7 +98,8 @@ body{
 .listBox{
     margin-top: 10px;
     border: 1px solid black;
-    height: 400px;
+    min-height: 350px;
+    height: auto;
     width: 800px;
     background-color: var(--primary-bg-color);
     box-shadow: 0 0 0 2px var(--shadow-color);
